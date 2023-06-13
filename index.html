@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Sacramento&display=swap" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/175c556c4c.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>   
+    <script src="main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="value_plus_side_wrap">
+        <div class="value_plus_sidemenu">
+            <div class="side_logo">
+                <a href="home.html">VALUE +</a>
+            </div>
+            <ul>
+                <li onclick="sideMv(1)" id="menu_home" class="side_menu1 sd">HOME</li>
+                <li onclick="sideMv(2)" id="menu_category" class="side_menu2 sd">CATEGORY</li>
+                <li onclick="sideMv(4)" id="menu_list" class="side_menu4 sd">ITEM LIST</li>
+            </ul>
+             <div class="side_ex">
+                010-2906-4553</br>
+                toat1216@gmail.com
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="search_page">
+        <div class="text_box">
+            <input type="text" name="search" placeholder="검색어를 입력하세요. WWW">
+            <div class="go_search">
+                <i class="fas fa-search"></i>
+            </div> 
+        </div>
+        <div class="search_category">
+            <div class="search_category_title">
+                <span>현재 경매 <span style="color: #4ac09b;">진행중인</span> 아이템!</span>
+            </div>
+            <div class="search_category_itme">
+                <div class="list_category list_item1"><span>가을호수</span></div>
+                <div class="list_category list_item2"><span>호수</span></div>
+                <div class="list_category list_item3"><span>절벽</span></div>
+            </div>
+        </div>
+        <div class="search_item">
+            <div class="list_content">
+                <div class="list_content_title">
+                    <div class="list_img_wrap"><img src="img/IMG_0141.JPG"></div>
+                    <h1>가을 호수</h1>
+                </div>
+                    <div class="list_content_price">
+                        <span>경매 현재가:</span><span>1,200,000원</span>
+                    </div>
+                <div class="list_content_btn">
+                    <button class="attend_btn"><span>경매 참여하기</span></button>
+                </div>
+            </div>
+            <div class="list_content">
+                <div class="list_content_title">
+                    <div class="list_img_wrap"><img src="img/IMG_0144.JPG"></div>
+                    <h1>호수</h1>
+                </div>
+            
+                    <div class="list_content_price">
+                        <span>경매 현재가:</span><span>700,000원</span>
+                    </div>
+                <div class="list_content_btn">
+                    <button class="attend_btn"><span>경매 참여하기</span></button>
+                </div>
+            </div>
+            <div class="list_content">
+                <div class="list_content_title">
+                    <div class="list_img_wrap"><img src="img/IMG_0140.JPG"></div>
+                    <h1>절벽</h1>
+                </div>
+                
+                    <div class="list_content_price">
+                        <span>경매 현재가:</span><span>800,000원</span>
+                    </div>
+                <div class="list_content_btn">
+                    <button class="attend_btn"><span>경매 참여하기</span></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="value_plus">
+        <div class="value_plus_menu">
+            <div class="plus_menu_logo">
+                <i class="fas fa-bars"></i>
+                <a href="home.html">VALUE +</a>
+            </div>
+            <div class="plus_menu_search_btn">
+                <i class="fas fa-plus" id="plus_page_open_btn"></i>
+                <i class="fas fa-times" id="plus_page_close_btn"></i>
+                <i class="fas fa-search" id="search_page_open_btn"></i>
+                <i class="fas fa-times" id="search_page_close_btn"></i>
+               
+            </div>
+        </div>
+        
+        <header id="mv1"  pageNum="1">
+        <div class="header_title">
+            <h1 id="123">당신의 물건에 가치를 더하다.</h1>
+            <span id="456"><p>value+를 통해 필용 없는 당신의 물건에</p>
+                  <p>가치를 더해보세요.</p>
+            </span>
+        </div>
+        <div class="header_slide">
+            <div class="side_btn side_btn_left on"><i class="fas fa-arrow-left"></i></div>
+            <div class="side_btn side_btn_right"><i class="fas fa-arrow-right"></i></div>
+            <div class="header_slide_content">
+                <div class="contents slide_page1">
+                    <div class="element page1_con1">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0137.JPG" alt="no">
+                    </div>
+                    <div class="page1_con2">
+                        <div class="element page1_con2_top">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0138.JPG" alt="no">
+                        </div>
+                        <div class="element page1_con2_bottom">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0139.JPG" alt="no">
+                        </div>
+                    </div>
+                </div>
+                <div class="contents slide_page2">
+                    <div class="element page2_con1">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0140.JPG" alt="no">
+                    </div>
+                    <div class="element page2_con2">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0141.JPG" alt="no">
+                    </div>
+                    <div class="element page2_con3">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0142.JPG" alt="no">
+                    </div>
+                </div>
+                <div class="contents slide_page3">
+                    <div class="page3_con1">
+                        <div class="element page3_con1_top">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0143.JPG" alt="no">
+                        </div>
+                        <div class="element page3_con1_bottom">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0144.JPG" alt="no">
+                        </div>
+                    </div>
+                    <div class="page3_con2">
+                        <div class="element page3_con2_top">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/video_img.png" alt="no">
+                        </div>
+                        <div class="element page3_con2_bottom">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0137.JPG" alt="no">
+                        </div>
+                    </div>
+                </div>
+                <div class="contents slide_page4">
+                    <div class="element page4_con1">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0138.JPG" alt="no">
+                    </div>
+                    <div class="element page4_con2">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0139.JPG" alt="no">
+                    </div>
+                    <div class="element page4_con3">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0140.JPG" alt="no">
+                    </div>
+                </div>
+                <div class="contents slide_page5">
+                    <div class="element page5_con1">
+                        <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                        <img src="img/IMG_0141.JPG" alt="no">
+                    </div>
+                    <div class="page5_con2">
+                        <div class="element page5_con2_left">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0142.JPG" alt="no">
+                        </div>
+                        <div class="element page5_con2_center">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0143.JPG" alt="no">
+                        </div>
+                        <div class="element page5_con2_right">
+                            <div class="element_wrap"><span>카테고리 이름</span><p>시작 가격</p></div>
+                            <img src="img/IMG_0144.JPG" alt="no">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_slide_btn">
+                <ul class="btn_ul">
+                    <li pagenum="1" id="li1" value="1" class="li_btn page">1</li>
+                    <li id="li2" class="li_btn" value="2">2</li>
+                    <li id="li3" class="li_btn" value="3">3</li>
+                    <li id="li4" class="li_btn" value="4">4</li>
+                    <li id="li5" class="li_btn" value="5">5</li>
+                </ul>
+            </div>
+        </div>
+        </header>
+        <div class="category" id="mv2" pageNum="2">
+            <div class="category_title">
+                <h3>VALUE+ CATEROGY</h3>
+                <span>value+ 카테고리</span>
+            </div>
+            <div class="category_content">
+                <div class="caregory_con category_content_1">
+                    <div class="content_item content_item1"><span>카테고리</span></div>
+                    <div class="content_item content_item2"><span>카테고리</span></div>
+                    <div class="content_item content_item3"><span>카테고리</span></div>
+                    <div class="content_item content_item4"><span>카테고리</span></div>
+                    <div class="content_item content_item5"><span>카테고리</span></div>
+                    <div class="content_item content_item6"><span>카테고리</span></div>
+                    <div class="content_item content_item7"><span>카테고리</span></div>
+                    <div class="content_item content_item8"><span>카테고리</span></div>
+                </div>
+                <div class="caregory_con category_content_2">
+                    <div class="content_item content_item9"><span>카테고리</span></div>
+                    <div class="content_item content_item10"><span>카테고리</span></div>
+                    <div class="content_item content_item11"><span>카테고리</span></div>
+                    <div class="content_item content_item12"><span>카테고리</span></div>
+                    <div class="content_item content_item13"><span>카테고리</span></div>
+                    <div class="content_item content_item14"><span>카테고리</span></div>
+                    <div class="content_item content_item15"><span>카테고리</span></div>
+                    <div class="content_item content_item16"><span>카테고리</span></div>
+                </div>
+                <div class="caregory_con category_content_3">
+                    <div class="content_item content_item17"><span>카테고리</span></div>
+                    <div class="content_item content_item18"><span>카테고리</span></div>
+                    <div class="content_item content_item19"><span>카테고리</span></div>
+                    <div class="content_item content_item20"><span>카테고리</span></div>
+                    <div class="content_item content_item21"><span>카테고리</span></div>
+                    <div class="content_item content_item22"><span>카테고리</span></div>
+                    <div class="content_item content_item23"><span>카테고리</span></div>
+                    <div class="content_item content_item24"><span>카테고리</span></div>
+                </div>
+            </div>
+        </div>
+       <div class="article_item" id="mv3" pageNum="3">
+           <div class="article_title">
+                <h1>Insert Product</h1>
+                <span>판매할 상품을 등록 하세요</span>
+           </div>
+           <div class="article_content">
+                <div class="article_content_img">
+                            <div class="article_content_img_title">
+                                <h1>
+                                    이미지 업로드<span>사진은 9개까지 업로드 가능합니다.</span>
+                                </h1>
+                                <div class="img_btn_wrap">
+                                <label class = "add_label" for="image"><span>추가</span></label> 
+                                <input type="file" class="img_upload" id="image" accept="img/*" onchange="setThumbnail(event);" multiple/>
+                                <button class="del_btn"><span>삭제</span></button> 
+                                </div>
+                            </div>
+                            <div id="image_container">
+                                <i class="fas fa-images"></i>
+                            </div>
+                </div>
+                <div class="article_content_txt">
+                    <form id="contact-form">
+                        <input class="form_in"id="item_name" type="text" name="to_name" placeholder="상품 이름">
+                        <select class="form_in"name="category" size="1">
+                            <option value="category1" selected>카테고리 선택</option>
+                            <option value="category2">카테고리1</option>
+                            <option value="category2">카테고리2</option>
+                            <option value="category3">카테고리3</option>
+                            <option value="category4">카테고리3</option>
+                            <option value="category5">카테고리5</option>
+                            <option value="category6">카테고리6</option>
+                        </select>
+                        <input class="form_in"id="item_price" type="number" name="from_name" placeholder="시작가 입력">
+                        <input class="form_in"id="location" type="text" name="from_name" placeholder="판매 위치">
+                        <input class="form_in"id="item_tag" type="text" name="from_name" placeholder="#연관태그입력">
+                      </form>
+                    </form>
+                </div>
+           </div>
+       </div>
+       <div class="item_list" id="mv4" pageNum="4">
+            <div class="item_list_title">
+                <h1>ItemList</h1>
+                <span>필요한 물건을 찾아보세요</span>
+            </div>
+            <div class="item_list_category">
+                <div class="list_category list_item1"><span>카테고리1</span></div>
+                <div class="list_category list_item2"><span>카테고리2</span></div>
+                <div class="list_category list_item3"><span>카테고리3</span></div>
+                <div class="list_category list_item4"><span>카테고리4</span></div>
+                <div class="list_category list_item5"><span>카테고리5</span></div>
+                <div class="list_category list_item6"><span>카테고리6</span></div>
+                <div class="list_category list_item7"><span>카테고리7</span></div>
+                <div class="list_category list_item8"><span>카테고리8</span></div>
+                <div class="list_category list_item9"><span>카테고리9</span></div>
+                <div class="list_category list_item10"><span>카테고리10</span></div>
+                <div class="list_category list_item11"><span>카테고리11</span></div>
+                <div class="list_category list_item12"><span>카테고리12</span></div>
+                <div class="list_category list_item13"><span>카테고리13</span></div>
+                <div class="list_category list_item14"><span>카테고리14</span></div>
+                <div class="list_category list_item15"><span>카테고리15</span></div>
+                <div class="list_category list_item16"><span>카테고리16</span></div>
+                <div class="list_category list_item17"><span>카테고리17</span></div>
+            </div>
+            <div class="item_list_content">
+                <div class="list_content">
+                    <div class="list_content_title">
+                        <div class="list_img_wrap"><img src="img/video_img.png"></div>
+                        <h1>바다</h1>
+                    </div>
+                    <div class="list_content_ex">
+                        <span>s급 바다 팔아요,포장지도 않뜯었어요 싸개올렸습니다!!</span>
+                    </div>
+                        <div class="list_content_price">
+                            <span>경매 현재가:</span><span>1,500,000원</span>
+                        </div>
+                    <div class="list_content_btn">
+                        <button class="attend_btn"><span>경매 참여하기</span></button>
+                    </div>
+                </div>
+                <div class="list_content">
+                    <div class="list_content_title">
+                        <div class="list_img_wrap"><img src="img/IMG_0144.JPG"></div>
+                        <h1>호수</h1>
+                    </div>
+                    <div class="list_content_ex">
+                        <span>s급 호수 팔아요,포장지도 않뜯었어요 싸개올렸습니다!!</span>
+                    </div>
+                        <div class="list_content_price">
+                            <span>경매 현재가:</span><span>700,000원</span>
+                        </div>
+                    <div class="list_content_btn">
+                        <button class="attend_btn"><span>경매 참여하기</span></button>
+                    </div>
+                </div>
+                <div class="list_content">
+                    <div class="list_content_title">
+                        <div class="list_img_wrap"><img src="img/IMG_0140.JPG"></div>
+                        <h1>절벽</h1>
+                    </div>
+                    <div class="list_content_ex">
+                        <span>s급 절벽 팔아요,포장지도 않뜯었어요 싸개올렸습니다!!</span>
+                    </div>
+                        <div class="list_content_price">
+                            <span>경매 현재가:</span><span>800,000원</span>
+                        </div>
+                    <div class="list_content_btn">
+                        <button class="attend_btn"><span>경매 참여하기</span></button>
+                    </div>
+                </div>
+                <div class="list_content">
+                    <div class="list_content_title">
+                        <div class="list_img_wrap"><img src="img/IMG_0143.JPG"></div>
+                        <h1>산맥</h1>
+                    </div>
+                    <div class="list_content_ex">
+                        <span>s급 산맥 팔아요,포장지도 않뜯었어요 싸개올렸습니다!!</span>
+                    </div>
+                        <div class="list_content_price">
+                            <span>경매 현재가:</span><span>2,200,000원</span>
+                        </div>
+                    <div class="list_content_btn">
+                        <button class="attend_btn"><span>경매 참여하기</span></button>
+                    </div>
+                </div>
+                <div class="list_content">
+                    <div class="list_content_title">
+                        <div class="list_img_wrap"><img src="img/IMG_0138.JPG"></div>
+                        <h1>풍경</h1>
+                    </div>
+                    <div class="list_content_ex">
+                        <span>s급 풍경 팔아요,포장지도 않뜯었어요 싸개올렸습니다!!</span>
+                    </div>
+                        <div class="list_content_price">
+                            <span>경매 현재가:</span><span>1,800,000원</span>
+                        </div>
+                    <div class="list_content_btn">
+                        <button class="attend_btn"><span>경매 참여하기</span></button>
+                    </div>
+                </div>
+                <div class="list_content">
+                    <div class="list_content_title">
+                        <div class="list_img_wrap"><img src="img/IMG_0141.JPG"></div>
+                        <h1>가을 호수</h1>
+                    </div>
+                    <div class="list_content_ex">
+                        <span>s급 가을 호수 팔아요,포장지도 않뜯었어요 싸개올렸습니다!!</span>
+                    </div>
+                        <div class="list_content_price">
+                            <span>경매 현재가:</span><span>1,200,000원</span>
+                        </div>
+                    <div class="list_content_btn">
+                        <button class="attend_btn"><span>경매 참여하기</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item_list_page">
+                <ul class="page_ul">
+                    <li value="1" class="page_li first_li">1</li>
+                    <li class="page_li" value="2">2</li>
+                    <li class="page_li" value="3">3</li>
+                    <li class="page_li" value="4">4</li>
+                    <li class="page_li" value="5">5</li>
+                    <li class="page_li" value="6">6</li>
+                    <li class="page_li" value="7">7</li>
+                    <li class="page_li" value="8">8</li>
+                    <li class="page_li" value="9">9</li>
+                    <li class="page_li" value="10">10</li>
+                </ul>
+            </div>
+       </div>
+       <div class="empty_box1"></div>
+       <div class="empty_box2">
+        <div class="content10_contact">
+            <div class="contact_form">
+                <div class="contact_form_title">
+                    <span>문의</span>
+                </div>
+                <form class="footer_form">
+                    <input class="form_in"id="form_name" type="text" name="to_name" placeholder="아이디">
+                    <!-- <label>Email</label> -->
+                    <input class="form_in"id="form_email" type="email" name="from_name" placeholder="이메일">
+                    <!-- <label>Message</label> -->
+                    <textarea id="form_ms" name="message" placeholder="메시지를 입력하세요." ></textarea>
+                    <input id="form_sb"type="submit" value="Send">
+                </form>
+            </div>
+            <div class="contact_ex">
+                <address>
+                    <p>대한민국 경기도 성남시</p>
+                    <p>분당구 삼평동 대왕판교로 660</p>
+                    <p>toat1216@gmail.com</p>
+                </address>
+                <div class="number">
+                    <p>010-2906-4553</p>
+                    <p>대표전화: (02)000-0000</p>
+                    <p>대표팩스: (02)000-0000</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <footer>
+        <span>
+            <p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </p>
+            © 2023 Made by K.H.M 
+        </span>
+       </footer>
+    </div>
+</body>
+</html>
